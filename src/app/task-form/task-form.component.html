@@ -1,0 +1,7 @@
+<form (ngSubmit)="onSubmit()">
+    <input [(ngModel)]="task.name" name="taskName" placeholder="Enter task" required class="slds-input">
+    <button type="submit" class="slds-button slds-button_brand">
+      {{ isEdit ? 'Update Task' : 'Add Task' }}
+    </button>
+  </form>
+  

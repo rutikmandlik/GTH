@@ -1,0 +1,8 @@
+<ul class="slds-list_dotted">
+    <li *ngFor="let task of tasks">
+      {{ task.name }}
+      <button (click)="editTask(task)" class="slds-button slds-button_neutral">Edit</button>
+      <button (click)="deleteTask(task.id)" class="slds-button slds-button_destructive">Delete</button>
+    </li>
+  </ul>
+  
