@@ -4,6 +4,7 @@ import { TaskService, Task } from '../task.service';
 @Component({
   selector: 'app-task-form',
   templateUrl: './task-form.component.html',
+  styleUrls: ['./task-form.component.css']
 })
 export class TaskFormComponent {
   task: Task = { id: 0, name: '' };
